@@ -40,7 +40,7 @@ for (i=0; i<fileList.length; i++) {
 	File.makeDirectory(channel1Path);
 	channel1Filename = currentFileName + "-C1-MAX.tiff";
 	//creates folder and saves image corresponding to channel
-	saveAs("Tiff", channel1Filename);
+	saveAs("Tiff", channel1Path + channel1Filename);
 
 	selectWindow("C2-MAX_" + currentFileName);
 	File.makeDirectory(channel2Path);
@@ -52,7 +52,7 @@ for (i=0; i<fileList.length; i++) {
 	File.makeDirectory(channel3Path);
 	 //creates folder and saves image corresponding to channel
 	 channel3Filename = currentFileName + "-C3-MAX.tiff";
-	saveAs("Tiff", channel3Filename);
+	saveAs("Tiff", channel3Path + channel3Filename);
 
 	// you may want to change channelxFilename to the target it stains for
 	//eg.  cd31FileName = currentFileName + "-C3-MAX.tiff";
