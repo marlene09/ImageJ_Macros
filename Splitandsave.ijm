@@ -46,7 +46,7 @@ for (i=0; i<fileList.length; i++) {
 	File.makeDirectory(channel2Path);
 	channel2Filename = currentFileName + "-C2-MAX.tiff";
 	//creates folder and saves image corresponding to channel
-	saveAs("Tiff", channel2Filename );
+	saveAs("Tiff", channel2Path + channel2Filename );
 
 	selectWindow("C3-MAX_" + currentFileName);
 	File.makeDirectory(channel3Path);
