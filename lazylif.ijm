@@ -31,6 +31,7 @@ run("Bio-Formats Importer");
 //opens Bio-Formats Importer GUI
 //select HYPERSTACK on the GUI and the color mode you prefer
 //Next window opens with Series, here select a series
+//make sure to deselect the first series when you choose another one
 
 seriesTitles = getList("image.titles");
 currentSeriesTitle = seriesTitles[0];
