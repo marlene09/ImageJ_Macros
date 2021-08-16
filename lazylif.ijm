@@ -90,10 +90,11 @@ run("Merge Channels...")
 
 //Merge channels by selecting the channels of your choice
 
-selectWindow("Composite");
+selectWindow("MAX_"+ currentSeriesTitleWithoutSpaces + ".tif");
 compositeName = "Composite" + currentSeriesTitleWithoutSpaces
 saveAs("tiff", compositeChosenChannelsPath + compositeName)
 // saves composite in merge folder
+
 
 run("Close All");
 
